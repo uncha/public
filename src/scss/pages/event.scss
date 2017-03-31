@@ -1,0 +1,205 @@
+#contents.event{
+	.event-list{
+		background:url($IMAGE_ROOT + 'event/winner_list_bg.gif') top center no-repeat;
+		min-width: $CONTAIN_SIZE;
+		overflow:hidden;
+
+		.wrap{
+			padding-top:65px;
+			width:$CONTAIN_SIZE;
+			margin:0 auto;
+			position:relative;
+
+			.title{
+				text-align: center;
+			}
+
+			.list{
+				width: 960px;
+				margin:40px auto 70px;
+
+				ul{
+					li{
+						width: 100%;
+						height: 285px;
+						position: relative;
+						padding:40px;
+						background: url($IMAGE_ROOT + 'event/winner_list_detail_bg.png') center no-repeat;
+						box-sizing: border-box;
+						margin-bottom: 25px;
+
+						> img{
+							width: 380px;
+							height: 200px;
+						}
+
+						.list-detail{
+							position: absolute;
+							top:40px;
+							left:470px;
+
+							._tag{
+								display: inline-block;
+								width: 120px;
+								text-align: center;
+								color:#FFF;
+								background: #f54a1c;
+								border-radius: 35px;
+								margin-right: 15px;
+								font-size: 17px;
+							}
+
+							dt{
+								.type{
+									height: 35px;
+									font-size: 18px;
+									color:#f54a1c;
+								}
+								.subject{
+									height: 85px;
+									font-size: 24px;
+									color:#222;
+								}
+							}
+							dd{
+								.term{
+									height: 35px;
+									line-height: 35px;
+									margin-bottom: 10px;
+									font-size: 16px;
+
+									.tag{
+										@extend ._tag;
+									}
+								}
+								.release{
+									height: 35px;
+									line-height: 35px;
+									margin-bottom: 10px;
+									font-size: 16px;
+
+									.tag{
+										@extend ._tag;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.event-view{
+		background:url($IMAGE_ROOT + 'event/winner_list_bg.gif') top center no-repeat;
+		min-width: $CONTAIN_SIZE;
+		overflow:hidden;
+
+		.wrap{
+			width:$CONTAIN_SIZE;
+			margin:0 auto;
+			position:relative;
+			padding:65px 95px 95px 95px;
+			box-sizing: border-box;
+
+			.title{
+				text-align: center;
+			}
+
+			.view-container{
+				margin-top:40px;
+				box-sizing: border-box;
+					
+				&:before{
+					content:'';
+					display: block;
+					background: url($IMAGE_ROOT + 'event/winner_view_round_top.png') center no-repeat;
+					width:100%;
+					height: 49px;
+				}
+
+				&:after{
+					content:'';
+					display: block;
+					background: url($IMAGE_ROOT + 'event/winner_view_round_bottom.png') center no-repeat;
+					width:100%;
+					height: 57px;
+				}
+
+				.view{
+					padding:0 50px;
+					background: #FFF;
+
+					table{
+						width: 100%;
+						
+						tr{
+							border-bottom: 1px solid #CCC;
+							td{
+								padding:0 50px;
+							}
+						}
+
+						.row1{
+							height: 58px;
+
+							td{
+								font-size: 24px;
+								color: #222;
+								text-align: center;
+								position: relative;
+
+								.tag{
+									position: absolute;
+									left:0;
+									top:0;
+									color:#f54a1c;
+									font-size: 18px;
+								}
+							}
+						}
+
+						.row2{
+							height: 62px;
+
+							td{
+								vertical-align: middle;
+
+								dl{
+									dt{
+										background: url($IMAGE_ROOT + '/event/ico_view.gif') left center no-repeat;
+										display: inline-block;
+										color:#222;
+										padding-left:10px;
+									}
+									dd{
+										padding-left: 50px;
+										display: inline-block;
+										color:#777;
+									}
+								}
+							}
+						}
+
+						.row3{
+							td{
+								padding:50px;
+							}
+
+							img{
+								max-width: 100%;
+							}
+						}
+					}
+				}
+			}
+
+			.btn-list{
+				display: block;
+				width: 200px;
+				margin:0 auto;
+				margin-top:27px;
+			}
+		}
+	}
+}

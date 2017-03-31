@@ -1,0 +1,228 @@
+#contents.song-event{
+	background:url($IMAGE_ROOT + 'event/song_event/bg.gif') center top no-repeat;
+	min-width: $CONTAIN_SIZE;
+	overflow:hidden;
+
+	.wrap{
+		width:$CONTAIN_SIZE;
+		margin:0 auto;
+		position: relative;
+
+		.howto-area{
+			z-index: 10;
+			position: relative;
+
+			>p {
+				position: absolute;
+			}
+
+			.title{
+				top:60px;
+			}
+
+			.date{
+				top:275px;
+				left:-255px;
+			}
+
+			.video-area{
+				position: absolute;
+				width:660px;
+				height: 469px;
+				top:275px;
+				right:0;
+				box-sizing: border-box;
+				padding:10px;
+				background: url($IMAGE_ROOT + 'event/song_event/video_area.png') center no-repeat;
+			}
+
+			.character{
+				top:588px;
+				left:753px;
+			}
+
+			.howto{
+				top:658px;
+			}
+
+			.btn-apply{
+				position: absolute;
+				top:552px;
+				width: 275px;
+				height: 77px;
+				background: url($IMAGE_ROOT + 'event/song_event/btn_apply.png') center no-repeat;
+				border:0;
+				cursor: pointer;
+			}
+		}
+
+		._list-area{
+
+			> ul{
+				@include clearfix;
+
+				> li{
+					width: 360px;
+					height: 400px;
+					position: relative;
+					box-sizing: border-box;
+					margin-bottom: 36px;
+					margin-right: 35px;
+					float:left;
+
+					&:nth-child(3n){
+						margin-right: 0;
+					}
+
+					.list-detail{
+						height: 340px;
+						padding:21px 21px 0 21px;
+						box-sizing: border-box;
+
+						dl{
+							padding:30px 0 0 10px;
+							dt{
+								a{
+									font-size:18px;
+									line-height: 18px;
+									color:#000;
+								}
+							}
+							dd{
+								margin-top:16px;
+								a{
+									font-size: 15px;
+									line-height: 24px;
+									color:#777;
+								}
+							}
+						}
+					}
+
+					.user{
+						line-height: 50px;
+						color:#FFF;
+						font-size: 16px;
+						padding:0 30px;
+						position: relative;
+
+						.goods{
+							position: absolute;
+							right:60px;
+							top:0;
+						}
+					}
+				}
+			}
+		}
+
+		.song-event-list{
+			padding-top: 1596px;
+			position: relative;
+
+			.song_event-list-cont{
+				position: relative;
+
+				.search-area{
+					.search-bar{
+						width: 930px;
+						height: 64px;
+						padding:18px 220px 22px;
+						box-sizing: border-box;
+
+						background: url($IMAGE_ROOT + 'event/song_event/search_area.png') left center no-repeat;
+
+						.search-value{
+							height: 100%;
+							width: 100%;
+							border:0;
+							color:#777;
+							font-size: 15px;
+						}
+
+						.btn-search{
+							position: absolute;
+							top:0;
+							left:800px;
+							width: 130px;
+							height: 60px;
+							background: url($IMAGE_ROOT + 'event/song_event/btn_search.png') center no-repeat;
+							border: 0;
+							cursor: pointer;
+						}
+					}
+
+					.sorting{
+						position: absolute;
+						top:0;
+						right:0;
+
+						a{
+							display: inline-block;
+							position: relative;
+							line-height: 60px;
+							font-weight: bold;
+							font-size: 16px;
+							margin-left:30px;
+							color:#38670f;
+
+							&.on{
+								color:#080f01;
+								&:after{
+									content:'';
+									position: absolute;
+									bottom:10px;
+									display: block;
+									width: 100%;
+									line-height: 1px;
+									border-bottom: 1px solid #080f01;
+								}
+							}
+
+							.arrow{
+								font-size: 13px;
+								padding-left: 10px;
+							}
+						}
+					}
+				}
+
+				.list-area{
+					@extend ._list-area;
+
+					padding-top:50px;
+
+					> ul{
+						> li{
+							background: url($IMAGE_ROOT + 'event/song_event/event_list_bg.png') center no-repeat;
+						}
+					}
+				}
+
+				.list-paging{
+					@include listPaging;
+				}
+			}
+		}
+
+		.best-song-event-list{
+			margin-top:30px;
+
+			.list-area{
+				@extend ._list-area;
+
+				padding-top:20px;
+
+				> ul{
+					> li{
+						background: url($IMAGE_ROOT + 'event/song_event/best_event_list_bg.png') center no-repeat;
+					}
+				}
+			}
+
+			.list-paging{
+				@include listPaging;
+			}
+		}
+	}
+}

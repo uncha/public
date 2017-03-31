@@ -1,0 +1,330 @@
+.popup.word-event-apply{
+	@include defaultPopup;
+
+	.description{
+		border-bottom:1px solid #CCC;
+		padding:42px 0 34px;
+		margin:0 60px;
+	}
+
+	.apply-form{
+		padding:0 60px 42px;
+
+		h2{
+			padding:40px 0 15px 0;
+
+			img{
+				vertical-align: middle;
+				padding-right:10px;
+			}
+		}
+	}
+
+	.agree{
+		padding:5px;
+
+		p{
+			font-size: 14px;
+			padding:14px 0 20px 0;
+			color:#777;
+		}
+	}
+
+	table{
+		@include defaultTable;
+	}
+
+	.button-group{
+		text-align: center;
+
+		.btn-submit{
+			background:url($IMAGE_ROOT + 'word/btn_popup_submit.png') center no-repeat;
+			text-indent: -9999px;
+			width:200px;
+			height: 60px;
+			border:0;
+		}
+	}
+}
+
+.popup.word-event-apply-complete{
+	@include defaultPopup;
+
+	.popup-cont{
+		text-align: center;
+		padding:60px 0 65px 0;
+
+		.button-group{
+			padding-top:60px;
+		}
+	}
+}
+
+.popup.video-event-apply{
+	@include defaultPopup;
+
+	.popup-cont{
+		position: relative;
+
+		.description{
+			border-bottom:1px solid #CCC;
+			padding:42px 0 34px;
+			margin:0 60px;
+		}
+
+		.sns{
+			position: absolute;
+			top:38px;
+			right:60px;
+
+			ul{
+				@include clearfix;
+
+				li{
+					float:left;
+					margin-left:10px;
+				}
+			}
+		}
+	}
+
+	.apply-form{
+		padding:0 60px 42px;
+
+		h2{
+			padding:40px 0 15px 0;
+
+			img{
+				vertical-align: middle;
+				padding-right:10px;
+			}
+		}
+	}
+
+	.agree{
+		padding:5px;
+
+		p{
+			font-size: 14px;
+			padding:14px 0 20px 0;
+			color:#777;
+		}
+	}
+
+	table{
+		@include defaultTable;
+
+		.address01{
+			input{
+				width:388px;
+			}
+
+			button{
+				float:right;
+				padding:9px 5px;
+				font-size: 14px;
+				color:#444;
+				background:#FFF;
+				border:2px solid #AAA;
+			}
+		}
+	}
+
+	.button-group{
+		text-align: center;
+
+		.btn-submit{
+			background:url($IMAGE_ROOT + 'video/btn_popup_submit.png') center no-repeat;
+			text-indent: -9999px;
+			width:200px;
+			height: 60px;
+			border:0;
+		}
+	}
+}
+
+.popup.video-event-apply-complete{
+	@include defaultPopup;
+	
+	.popup-cont{
+		text-align: center;
+		padding:60px 0 65px 0;
+
+		.button-group{
+			padding-top:60px;
+		}
+	}
+}
+
+.popup.song-event-view{
+	@include defaultPopup;
+	
+	.popup-cont{
+		padding:50px 70px;
+
+		.video-area{
+			background: url($IMAGE_ROOT + 'event/song_event/popup_video_area.jpg') left top no-repeat;
+			width: 660px;
+			height: 386px;
+			padding:10px;
+		}
+
+		.description{
+			font-size:15px;
+			line-height: 24px;
+			color:#777;
+
+			.tit{
+				font-size: 24px;
+				color:#000;
+				line-height: 24px;
+				padding: 30px 0;
+			}
+
+			.user{
+				font-size: 16px;
+				color:#000;
+				padding:40px 0;
+				border-bottom: 1px solid #CCC;
+			}
+		}
+
+		.button-group{
+			text-align: center;
+
+			p{
+				padding:30px 0 20px 0;
+				color:#fd4708;
+				font-size: 16px;
+			}
+
+			.btn-goods{
+				@include defaultButton((border:0, width:200px, height:70px, fontSize:20px, color:#FFF)...);
+
+				background: url($IMAGE_ROOT + 'event/song_event/btn_goods.png') center no-repeat;
+				padding-right: 20px;
+			}
+		}
+	}
+}
+
+.popup.song-event-complete{
+	@include defaultPopup;
+
+	.popup-cont{
+		padding:60px 0;
+		text-align: center;
+		position: relative;
+
+		.btn-complete{
+			background: url($IMAGE_ROOT + 'event/song_event/complete_popup_btn.png') center no-repeat;
+			width: 120px;
+			height: 60px;
+			border:0;
+			left:240px;
+			top:300px;
+			position: absolute;
+		}
+	}
+}
+
+.popup.youtube{
+	@include defaultPopup;
+}
+
+.popup.song-event-apply{
+	@include defaultPopup;
+
+	.popup-cont{
+		position: relative;
+
+		.description{
+			border-bottom:1px solid #CCC;
+			padding:42px 0 34px;
+			margin:0 60px;
+		}
+
+		.sns{
+			position: absolute;
+			top:38px;
+			right:60px;
+
+			ul{
+				@include clearfix;
+
+				li{
+					float:left;
+					margin-left:10px;
+				}
+			}
+		}
+	}
+
+	.apply-form{
+		padding:0 60px 42px;
+
+		h2{
+			padding:40px 0 15px 0;
+
+			img{
+				vertical-align: middle;
+				padding-right:10px;
+			}
+		}
+	}
+
+	.agree{
+		padding:5px;
+
+		p{
+			font-size: 14px;
+			padding:14px 0 20px 0;
+			color:#777;
+		}
+	}
+
+	table{
+		@include defaultTable;
+
+		.phone01{
+			input{
+				width:388px;
+			}
+
+			button{
+				float:right;
+				padding:9px 5px;
+				font-size: 14px;
+				color:#444;
+				background:#FFF;
+				border:2px solid #AAA;
+				width: 100%;
+			}
+		}
+
+		.youtube-url{
+			p{
+				padding:15px 0;
+
+				a{
+					color:#ff0000;
+					font-size: 14px;
+					padding-left: 20px;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	.button-group{
+		text-align: center;
+
+		.btn-submit{
+			background:url($IMAGE_ROOT + 'event/song_event/btn_popup_submit.png') center no-repeat;
+			text-indent: -9999px;
+			width:200px;
+			height: 60px;
+			border:0;
+		}
+	}
+}

@@ -1,0 +1,34 @@
+#contents.main{
+	background:url($IMAGE_ROOT + 'main_bg.gif') top center no-repeat;
+	min-width:$CONTAIN_SIZE;
+	overflow:hidden;
+
+	.main-content{
+		width: $CONTAIN_SIZE;
+		margin:0 auto;
+		height: 810px;
+		position: relative;
+
+		.main-visual{position: absolute; top:0;}
+		.main-visual > p{position: absolute; left:0; top:0;}
+		.main-visual > p.title01{left:245px; top:180px; opacity : 0;}
+		.main-visual > p.title02{left:283px; top:320px; opacity : 0;}
+		.main-visual > p.character{left:-197px; top:93px; display: none;}
+		.main-visual > p.jalkton{left:856px; top:100px; display: none;}
+		.main-visual > p.present{left:274px; top:320px; opacity : 0;}
+		
+
+		.button-group{
+			padding-top:20px;
+			text-align: center;
+			position: absolute; 
+			top:750px; 
+			left:260px; 
+			opacity : 0;
+
+			a{
+				padding:0 5px;
+			}
+		}
+	}
+}

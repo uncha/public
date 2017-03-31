@@ -1,0 +1,151 @@
+@mixin defaultPopup{
+	display:none;
+	position:absolute;
+	width:800px;
+	border:1px solid #CCC;
+	background:#FFF;
+	z-index:999;
+
+	h2{
+		font-size: 17px;
+		width: 100%;
+	}
+
+	.btn-popup-close{
+		position: absolute;
+		top:20px;
+		right:20px;
+		width: 51px;
+		height: 56px;
+		background:url($IMAGE_ROOT + 'btn_popup_close.png') center no-repeat;
+	}
+
+	textarea, select{
+		width: 100%; 
+		padding:9.5px 5px;
+		margin:0;
+		font-size: 15px;
+		border:1px solid #CCC;
+	}
+}
+
+@mixin defaultTable{
+	@include basicTable;
+	
+	tr{
+		th{
+			text-align: left;
+			font-size:15px;
+			padding:17px 0;
+		}
+		td{
+			padding:5px;
+			vertical-align: middle;
+
+			input{
+				width: 100%;
+				padding:0;
+				margin:0;
+				font-size: 15px;
+				padding:9.5px 5px;
+				border:1px solid #CCC;
+			}
+		}
+
+	}
+}
+
+@mixin boardList{
+	@include basicTable;
+	
+	margin-top:50px;
+
+	th{
+		&:first-child{
+			background:url($IMAGE_ROOT + 'video/table_head_left.png') left top no-repeat;
+		}
+		&:last-child{
+			background:url($IMAGE_ROOT + 'video/table_head_right.png') right top no-repeat;
+		}
+
+		padding:24px 0 50px 0;
+		color:#000;
+		font-size: 15px;
+		line-height: 15px;
+		color:#FFF;
+		background:url($IMAGE_ROOT + 'video/table_head.png') center top no-repeat;
+	}
+
+	td{
+		text-align:center;
+		padding:12.5px;
+		font-size:15px;
+		line-height: 15px;
+		color:#000;
+	}
+
+	.contents{
+		text-align:left;
+	}
+
+	.button-group{
+		@include buttonGroup;
+		text-align: right;
+		padding-bottom: 20px;
+		border:1px solid red;
+
+		a{
+			@include defaultButton(1px solid #7d7d7d, #FFF, #2e2e2e, 94px, 30px);
+		}
+	}
+}
+
+@mixin listPaging{
+	margin-top:28px;
+	text-align: center;
+
+	.numbers{
+		display: inline-block;
+		margin-top: -8px;
+
+		li{
+			display: inline-block;
+			padding:6px 0;
+			width: 26px;
+			text-align: center;
+			line-height: 0;
+			margin:0 7px;
+			vertical-align: middle;
+
+			a{
+				font-size: 13px;
+				line-height: 13px;
+				color:#666;
+			}
+			a:hover{color:#666}
+		}
+
+		.current{
+			background:#333;
+			a{color: #FFF;}
+			a:hover{color:#FFF}
+			border-radius:100%;
+		}
+	}
+
+	.prev{
+		background:url($IMAGE_ROOT + 'btn_prev_list.png') center no-repeat;
+		width: 7px;
+		height: 25px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.next{
+		background:url($IMAGE_ROOT + 'btn_next_list.png') center no-repeat;
+		width: 7px;
+		height: 8px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}

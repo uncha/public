@@ -1,0 +1,99 @@
+#contents.introduce{
+	.introduce-content{
+		background:url($IMAGE_ROOT + 'introduce/introduce_bg.gif') top center no-repeat;
+		min-width: $CONTAIN_SIZE;
+		overflow:hidden;
+
+		.wrap{
+			padding-top:65px;
+			width:$CONTAIN_SIZE;
+			margin:0 auto;
+			position:relative;
+
+			#tab{
+				position: absolute;
+				width:$CONTAIN_SIZE;
+				top:693px;
+
+				ul{
+					width: 358px;
+					margin:0 auto;
+
+					li{
+						&:nth-child(1){
+							background:url($IMAGE_ROOT + 'introduce/tab_off01.png') center no-repeat;
+						}
+						&:nth-child(2){
+							background:url($IMAGE_ROOT + 'introduce/tab_off02.png') center no-repeat;
+						}
+
+						&:nth-child(1).on{
+							background:url($IMAGE_ROOT + 'introduce/tab_on01.png') center no-repeat;
+						}
+						&:nth-child(2).on{
+							background:url($IMAGE_ROOT + 'introduce/tab_on02.png') center no-repeat;
+						}
+
+						width: 130px;
+						height: 135px;
+						border:0;
+						padding:0 24px;
+						cursor: pointer;
+					}
+				}
+			}
+
+			#tab-cont{
+				ul{
+					li{
+						&:nth-child(2){
+							padding-bottom:50px;
+						}
+
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+
+	.brand-histroy-content{
+		background:url($IMAGE_ROOT + 'introduce/brand_bg.gif') top center no-repeat;
+		min-width: $CONTAIN_SIZE;
+		overflow:hidden;
+
+		.wrap{
+			padding:65px 0 35px 0;
+			width:$CONTAIN_SIZE;
+			margin:0 auto;
+			position:relative;
+
+			.img{
+				margin-left: 40px;
+			}
+		}
+	}
+
+	.company-content{
+		background:url($IMAGE_ROOT + 'introduce/company_bg.gif') top center no-repeat;
+		min-width: $CONTAIN_SIZE;
+		overflow:hidden;
+		
+		.wrap{
+			padding-top:65px;
+			width:$CONTAIN_SIZE;
+			margin:0 auto;
+			position:relative;
+
+			.img{
+				margin-left:-190px;
+				position: relative;
+			}
+
+			.button-group{
+				text-align: center;
+				padding:48px 0; 
+			}
+		}
+	}
+}
